@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ig11soundspleeter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="top">
+        <h1>IG11SOUNDSPLEETER</h1>
+        <p id="description">Faça o upload de uma música para separar a voz dos instrumentos.</p>
+        
+        <form id="upload-form">
+            <input type="file" id="audio-file" accept="audio/*" required>
+            <button id="upload-btn" type="submit">Processar</button>
+        </form>
+        
+        <div id="status"></div>
+        
+        <div id="audio-players" style="display: none;">
+            <div class="audio-player-container">
+                <h3>Voz</h3>
+                <audio id="voice-player" controls></audio>
+                <a href="#" id="voice-download" download>Baixar Voz</a>
+            </div>
+            <div class="audio-player-container">
+                <h3>Instrumentos</h3>
+                <audio id="instruments-player" controls></audio>
+                <a href="#" id="instruments-download" download>Baixar Instrumentos</a>
+            </div>
+        </div>
+
+        <div id="info">
+            <h2 id="how-title">Como funciona?</h2>
+            <p id="info-text">Este é um simples separador de áudio, que separa a voz dos instrumentos de uma música.
+                <br>
+                Foi criado para facilitar o trabalho dos músicos, principalmente quando desejam aprender uma canção nova.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p id="love">Feito com ❤️ por <a href="http://github.com/edvanioFC">edvanioFC</a></p>
+    </footer>
+
+    <div id="lang-theme">
+        <button id="toggle-theme">
+            <img id="theme-icon" src="assets/moon.png" alt="mudar tema">
+        </button>
+        
+        <button id="toggle-language">
+            <img id="language-icon" src="assets/en.png" alt="Toggle Language">
+        </button>
+    </div>
+    
+
+    <script src="js/index.js"></script>
+</body>
+</html>
