@@ -61,6 +61,8 @@ document.getElementById("toggle-language").addEventListener("click", function() 
         document.getElementById("status").textContent = "Processing completed!";
         document.getElementById("status").style.display = "none";
         document.getElementById("how-title").textContent = "How it works?";
+        document.getElementById("voice-download").textContent = "Download Vocals";
+        document.getElementById("instruments-download").textContent = "Download Instruments";
         //this.textContent = "Português";
         languageIcon.src = "assets/pt.png";
         languageIcon.alt = "Switch to Portuguese";
@@ -74,6 +76,8 @@ document.getElementById("toggle-language").addEventListener("click", function() 
         document.getElementById("status").textContent = "Processamento concluído!";
         document.getElementById("status").style.display = "none";
         document.getElementById("how-title").textContent = "Como funciona?";
+        document.getElementById("voice-download").textContent = "Baixar Voz";
+        document.getElementById("instruments-download").textContent = "Baixar Instrumentos";
         languageIcon.src = "assets/en.png";
         languageIcon.alt = "Switch to English";
         //this.textContent = "English";

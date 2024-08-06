@@ -8,22 +8,20 @@ body {
   background-color: #fff;
   color: #000;
 }
-
-#top {
+body #top {
   margin-bottom: 40vh;
 }
-#top h1 {
+body #top h1 {
   color: #0e50b4;
   font-size: 64px;
 }
-#top p {
+body #top p {
   color: #666;
 }
-#top #upload-form {
+body #top #upload-form {
   margin: 20px 0;
 }
-
-input[type=file] {
+body #top #upload-form input[type=file] {
   padding: 10px;
   border: 2px solid #2754d1;
   border-radius: 5px;
@@ -31,8 +29,7 @@ input[type=file] {
   color: #0d45ac;
   font-size: 16px;
 }
-
-button {
+body #top #upload-form button {
   margin-top: 10px;
   padding: 10px 20px;
   background-color: #1a45d1;
@@ -42,35 +39,20 @@ button {
   font-family: "Arial Black", sans-serif;
   font-size: 18px;
 }
-
-#status {
+body #top #status {
   margin: 20px 0;
   font-weight: bold;
   color: #0e50b4;
 }
-
-#info {
+body #top #info {
   margin-top: 30px;
 }
-
-footer {
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: #f4f4f4;
-  border-top: 1px solid #8fb1f0;
-  color: #4e4c4c;
+body #top #info h2 {
+  margin-top: 20px;
+  color: #0e50b4;
+  font-size: 32px;
 }
-footer a {
-  color: #3f3d3d;
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
-  color: #0d45ac;
-}
-
-#lang-theme {
+body #top #lang-theme {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -83,7 +65,7 @@ footer a:hover {
   padding: 3px;
   transition: background-color 0.5s;
 }
-#lang-theme #toggle-theme, #lang-theme #toggle-language {
+body #top #lang-theme #toggle-theme, body #top #lang-theme #toggle-language {
   top: 20px;
   left: 20px;
   background: none;
@@ -92,40 +74,46 @@ footer a:hover {
   padding: 0;
   margin-top: 20px;
 }
-#lang-theme #toggle-theme img, #lang-theme #toggle-language img {
+body #top #lang-theme #toggle-theme img, body #top #lang-theme #toggle-language img {
   width: 30px;
   height: 30px;
 }
-#lang-theme #toggle-language img {
+body #top #lang-theme #toggle-language img {
   width: 28px;
   height: 28px;
 }
-
-h2 {
-  margin-top: 20px;
-  color: #0e50b4;
-  font-size: 32px;
-}
-
-.audio-player-container {
+body #top .audio-player-container {
   margin: 20px 0;
 }
-
-audio {
+body #top audio {
   width: 100%;
   outline: none;
 }
-
-audio::-webkit-media-controls-panel {
+body #top audio::-webkit-media-controls-panel {
   background-color: #1a45d1;
 }
-
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-timeline,
-audio::-webkit-media-controls-mute-button,
-audio::-webkit-media-controls-current-time-display,
-audio::-webkit-media-controls-time-remaining-display {
+body #top audio::-webkit-media-controls-play-button,
+body #top audio::-webkit-media-controls-timeline,
+body #top audio::-webkit-media-controls-mute-button,
+body #top audio::-webkit-media-controls-current-time-display,
+body #top audio::-webkit-media-controls-time-remaining-display {
   color: #fff;
+}
+body #top footer {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-top: 1px solid #8fb1f0;
+  color: #4e4c4c;
+}
+body #top footer a {
+  color: #3f3d3d;
+  text-decoration: none;
+}
+body #top footer a:hover {
+  text-decoration: underline;
+  color: #0d45ac;
 }
 
 .dark-mode {
@@ -133,14 +121,14 @@ audio::-webkit-media-controls-time-remaining-display {
   color: #e0e0e0;
 }
 .dark-mode audio::-webkit-media-controls-panel {
-  background-color: #333;
+  background-color: #302f2f;
 }
 .dark-mode audio::-webkit-media-controls-play-button,
 .dark-mode audio::-webkit-media-controls-timeline,
 .dark-mode audio::-webkit-media-controls-mute-button,
 .dark-mode audio::-webkit-media-controls-current-time-display,
 .dark-mode audio::-webkit-media-controls-time-remaining-display {
-  color: #bbb;
+  color: #ccc3c3;
 }
 .dark-mode footer {
   background-color: #1e1e1e;
@@ -151,4 +139,108 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 .dark-mode footer a:hover {
   color: #0d45ac;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+  body #top h1 {
+    font-size: 48px;
+  }
+  body #top #upload-form button {
+    font-size: 16px;
+  }
+  body #top #lang-theme {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+  }
+  body #top #lang-theme #toggle-theme, body #top #lang-theme #toggle-language {
+    top: 20px;
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  body #top h1 {
+    font-size: 36px;
+  }
+  body #top #upload-form input[type=file] {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+  }
+  body #top #upload-form button {
+    font-size: 14px;
+  }
+  body #top #lang-theme {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+  }
+  body #top #lang-theme #toggle-theme, body #top #lang-theme #toggle-language {
+    top: 20px;
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+  body #top h1 {
+    font-size: 24px;
+  }
+  body #top #upload-form input[type=file] {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+  }
+  body #top #upload-form button {
+    font-size: 12px;
+  }
+  body #top #lang-theme {
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 30px);
+  }
+  body #top #lang-theme #toggle-theme, body #top #lang-theme #toggle-language {
+    top: 20px;
+    left: 20px;
+  }
+  body #top #lang-theme #toggle-theme img, body #top #lang-theme #toggle-language img {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media only screen and (max-width: 200px) {
+  body {
+    font-size: 8px;
+  }
+  body #top h1 {
+    font-size: 20px;
+  }
+  body #top #upload-form input[type=file] {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+  }
+  body #top #upload-form button {
+    font-size: 10px;
+  }
+  body #top #lang-theme {
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 30px);
+  }
+  body #top #lang-theme #toggle-theme, body #top #lang-theme #toggle-language {
+    top: 20px;
+    left: 20px;
+  }
+  body #top #lang-theme #toggle-theme img, body #top #lang-theme #toggle-language img {
+    width: 15px;
+    height: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
