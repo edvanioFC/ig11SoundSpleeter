@@ -66,14 +66,14 @@ def process_audio():
         os.makedirs(output_path, exist_ok=True)
         separator.separate_to_file(file_path, output_path)
 
-        # Caminhos para os arquivos processados
+        '''# Caminhos para os arquivos processados
         vocals_filename = os.path.join(output_path, 'vocals.wav')
         accompaniment_filename = os.path.join(output_path, 'accompaniment.wav')
 
-        # acessar os arquivos dentro do diretório unique_id/unique_id_vocal_filename/vocal.wav
+        # acessar os arquivos dentro do diretório unique_id/unique_id_unique_filename/vocal.wav...
         vocals_output_path = os.path.join(unique_filename, 'vocals.wav')
         accompaniment_output_path = os.path.join(unique_filename, 'accompaniment.wav')
-        os.makedirs(os.path.join(output_path, unique_filename), exist_ok=True)
+        os.makedirs(os.path.join(output_path, unique_filename), exist_ok=True)'''
                 
         print('Unicoooo:', unique_filename)
 
